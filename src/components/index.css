@@ -25,6 +25,7 @@ header p{
     display: flex;
     flex-direction: row;
     height: 150vh;
+    flex-grow: 1;
 }
 
 ul {
@@ -43,7 +44,8 @@ main {
     width: 70%;
     background-color: #76C0EC;
     text-align: center;
-    padding: 1%
+    padding: 1%;
+
 }
 main *{
     font-size: calc(2px + 1.3vw);
@@ -52,6 +54,7 @@ main *{
 nav {
     width: 30%;
     background-color: #3368A0;
+
 }
 nav li{
     background-color: #F2EFE7;
