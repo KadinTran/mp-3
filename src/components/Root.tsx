@@ -8,14 +8,34 @@ import Projects from './Projects.tsx';
 import Nav from "./Nav.tsx";
 import Header from "./Header.tsx";
 import Footer from "./Footer.tsx";
+import styled from "styled-components";
+
+const PageWrapper = styled.div`
+    background-color: #76C0EC;
+    width: 80%;
+    margin: 0 auto;
+`;
+
+const Content = styled.div`
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 150vh;
+    flex-grow: 1;
+    @media screen and (max-width: 750px){
+        flex-direction: column;
+        height: 150vh;
+        margin: 0;
+    }
+`;
 
 
 export default function Root() {
 
     return (
-        <div id ="page-wrapper">
+        <PageWrapper>
             <Header />
-            <div id="content">
+            <Content>
                 <Nav/>
                 <Routes>
                     <Route path={'/'} element={<Home/>}/>
@@ -25,8 +45,8 @@ export default function Root() {
                     <Route path={'/skills'} element={<Skills/>}/>
                     <Route path={'/projects'} element={<Projects/>}/>
                 </Routes>
-            </div>
+            </Content>
             <Footer />
-        </div>
+        </PageWrapper>
     )
 }

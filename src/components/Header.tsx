@@ -1,15 +1,31 @@
 import {useLocation} from "react-router-dom";
-// Found useLocation function to find what path I am on https://reactrouter.com/api/hooks/useLocation
+import {useEffect} from "react";
+import styled from "styled-components";
+
+const StyledHeader = styled.header`
+    background-color: #49A4BB;
+    @media screen and (max-width: 750px){
+        text-align: center;
+    }
+`;
+const HeaderH1 = styled.h1`
+    margin: 0 1%;
+`;
+const HeaderP = styled.p`
+    margin: 0 1%;
+`;
 
 export default function Header(){
+    // Found useLocation function to find what path I am on: https://reactrouter.com/api/hooks/useLocation
+    // Needs to be rendered inside a router so Header is a child of Root
     const location = useLocation();
     let page = "";
     let blurb = "";
 
     switch (location.pathname){
         case "/":
-            page = "Kadin Tran";
-            blurb = "Resume Page";
+            page = "Home";
+            blurb = "Resume Page for Kadin Tran";
             break;
         case "/education":
             page = "Education";
@@ -32,10 +48,15 @@ export default function Header(){
             blurb = "Projects I've Completed";
             break;
     }
+    // change the <title> tag based on the page we are on
+    useEffect(() => {
+        document.title = `${page} | Kadin Resume`;
+    }, [page])
+
     return(
-        <header>
-            <h1> {page} </h1>
-            <p> {blurb} </p>
-        </header>
+        <StyledHeader>
+            <HeaderH1> {page} </HeaderH1>
+            <HeaderP> {blurb} </HeaderP>
+        </StyledHeader>
     )
 }

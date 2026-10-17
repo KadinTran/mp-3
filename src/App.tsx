@@ -5,9 +5,7 @@ import Root from "./components/Root.tsx";
 
 export default function App() {
   const router = createBrowserRouter(
-        [
-            {path: '*', Component: Root}
-        ]
+        [{path: '*', Component: Root}]
   )
 
     return (
