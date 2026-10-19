@@ -1,4 +1,4 @@
-import {Desc, Lists, StyledMain, StyledUl} from './Styles.ts'
+import {Desc, Lists, StyledMain, StyledUl} from '../Styles.ts'
 
 export default function Professional() {
     return (

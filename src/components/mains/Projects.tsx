@@ -1,11 +1,11 @@
 import {useState} from "react";
-import Neutral from "../assets/neutral.jpeg";
-import Cheer from "../assets/cheer.jpeg";
-import Beast from "../assets/beast.jpeg";
-import Nervous from "../assets/nervous.jpeg";
-import Sad from "../assets/sad.jpeg";
-import Happy from "../assets/happy.jpeg";
-import {StyledH3, StyledMain, StyledP} from "./Styles.ts";
+import Neutral from "../../assets/neutral.jpeg";
+import Cheer from "../../assets/cheer.jpeg";
+import Beast from "../../assets/beast.jpeg";
+import Nervous from "../../assets/nervous.jpeg";
+import Sad from "../../assets/sad.jpeg";
+import Happy from "../../assets/happy.jpeg";
+import {StyledH3, StyledMain, StyledP} from "../Styles.ts";
 import styled from "styled-components";
 
 const Judgement = styled.img`

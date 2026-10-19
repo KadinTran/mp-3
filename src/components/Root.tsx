@@ -1,10 +1,10 @@
 import {Routes, Route} from 'react-router-dom';
-import Home from './Home.tsx'
-import Education from './Education.tsx';
-import Professional from './Professional.tsx';
-import Volunteering from './Volunteering.tsx';
-import Skills from './Skills.tsx';
-import Projects from './Projects.tsx';
+import Home from './mains/Home.tsx'
+import Education from './mains/Education.tsx';
+import Professional from './mains/Professional.tsx';
+import Volunteering from './mains/Volunteering.tsx';
+import Skills from './mains/Skills.tsx';
+import Projects from './mains/Projects.tsx';
 import Nav from "./Nav.tsx";
 import Header from "./Header.tsx";
 import Footer from "./Footer.tsx";

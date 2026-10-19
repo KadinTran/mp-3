@@ -1,5 +1,5 @@
-import BrooklineLogo from '../assets/brookline.jpeg'
-import {Lists, StyledImg, StyledMain, StyledP, StyledUl} from './Styles.ts'
+import BrooklineLogo from '../../assets/brookline.jpeg'
+import {Lists, StyledImg, StyledMain, StyledP, StyledUl} from '../Styles.ts'
 
 export default function Volunteering() {
     return (

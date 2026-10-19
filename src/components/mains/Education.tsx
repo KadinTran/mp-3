@@ -1,6 +1,6 @@
-import BUlogo from '../assets/Boston-University-Logo.jpeg'
-import BLSlogo from '../assets/bls_logo.jpeg'
-import {Desc, Lists, StyledImg, StyledMain, StyledUl} from './Styles.ts'
+import BUlogo from '../../assets/Boston-University-Logo.jpeg'
+import BLSlogo from '../../assets/bls_logo.jpeg'
+import {Desc, Lists, StyledImg, StyledMain, StyledUl} from '../Styles.ts'
 
 export default function Education() {
     return (

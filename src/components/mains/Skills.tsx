@@ -1,7 +1,7 @@
-import Gopher from '../assets/gopher.jpeg'
-import Ocaml from '../assets/ocaml.jpeg'
-import Web from '../assets/web.jpeg'
-import {MainUlLi, StyledImg, StyledMain, StyledUl} from './Styles.ts'
+import Gopher from '../../assets/gopher.jpeg'
+import Ocaml from '../../assets/ocaml.jpeg'
+import Web from '../../assets/web.jpeg'
+import {MainUlLi, StyledImg, StyledMain, StyledUl} from '../Styles.ts'
 
 export default function Skills() {
     return (

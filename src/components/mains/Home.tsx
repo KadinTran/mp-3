@@ -1,5 +1,5 @@
-import wu from '../assets/with_wu2.jpeg'
-import {StyledH3, StyledMain, StyledP} from "./Styles.ts";
+import wu from '../../assets/with_wu2.jpeg'
+import {StyledH3, StyledMain, StyledP} from "../Styles.ts";
 import styled from "styled-components";
 
 const WuImg = styled.img`
